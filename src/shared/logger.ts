@@ -1,5 +1,5 @@
-import winston from 'winston';
-import path from 'path';
+import winston from 'winston'
+import path from 'path'
 const logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
@@ -7,10 +7,10 @@ const logger = winston.createLogger({
     new winston.transports.Console(),
     new winston.transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'success.log'),
-      level: 'info'
+      level: 'info',
     }),
   ],
-});
+})
 const errorLogger = winston.createLogger({
   level: 'error',
   format: winston.format.json(),
@@ -18,13 +18,9 @@ const errorLogger = winston.createLogger({
     new winston.transports.Console(),
     new winston.transports.File({
       filename: path.join(process.cwd(), 'logs', 'winston', 'error.log'),
-      level: 'error'
+      level: 'error',
     }),
   ],
-});
+})
 
-export {
-
-  logger,
-  errorLogger
-} 
+export { logger, errorLogger }
