@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use('/api/users/', usersRouter)
 
-app.get('/', async(req: Request, res: Response) => {
+app.get('/', async (req: Request, res: Response) => {
   res.send('server is running')
 })
 
