@@ -27,7 +27,8 @@
     "mongoose": "^7.2.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4",
-    "winston": "^3.9.0"
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
