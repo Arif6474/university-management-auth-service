@@ -13,10 +13,10 @@ const createUser = async (user: userType): Promise<userType | null> => {
     user.password = config.default_user_password as string
   }
   const createdUser = await User.create(user)
-  logger.info(createdUser);
-  
+  logger.info(createdUser)
+
   if (!createdUser) {
-    throw new ApiError(400,'Failed to create user' ,'')
+    throw new ApiError(400, 'Failed to create user', '')
   }
   return createdUser
 }
