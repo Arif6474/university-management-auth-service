@@ -7,15 +7,10 @@ import handleValidationError from '../../errors/handleValidationError'
 import ApiError from '../../errors/ApiError'
 import { errorLogger } from '../../shared/logger'
 
-const globalErrorHandler: ErrorRequestHandler = (
-  error,
-  req,
-  res,
-  next
-) => {
+const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   config.env === 'development'
-  ? console.log(`🐱‍🏍 globalErrorHandler ~~`, error)
-  : errorLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
+    ? console.log(`🐱‍🏍 globalErrorHandler ~~`, error)
+    : errorLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error)
 
   let statusCode = 500
   let message = 'Something went wrong!'
@@ -26,27 +21,26 @@ const globalErrorHandler: ErrorRequestHandler = (
     statusCode = simplifiedErrorMessage.statusCode
     message = simplifiedErrorMessage.message
     errorMessages = simplifiedErrorMessage.errorMessages
-  }
-  else if (error instanceof ApiError) {
+  } else if (error instanceof ApiError) {
     statusCode = error?.statusCode
     message = error.message
     errorMessages = error?.message
       ? [
-        {
-          path: '',
-          message: error?.message,
-        },
-      ]
+          {
+            path: '',
+            message: error?.message,
+          },
+        ]
       : []
   } else if (error instanceof Error) {
     message = error?.message
     errorMessages = error?.message
       ? [
-        {
-          path: '',
-          message: error?.message,
-        },
-      ]
+          {
+            path: '',
+            message: error?.message,
+          },
+        ]
       : []
   }
   res.status(statusCode).json({
