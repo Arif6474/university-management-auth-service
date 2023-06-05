@@ -1,0 +1,35 @@
+Tue Jun 06 2023 1:0:7 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:0:7 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:0:27 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:0:27 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:1:26 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:1:26 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:1:53 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:1:53 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:2:10 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:2:10 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:4:1 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:4:1 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:4:50 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:4:50 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:5:9 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:5:9 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:7:45 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:7:45 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:9:24 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:9:24 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:16:55 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:16:55 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:17:31 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:17:31 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:22:16 [HUC] info: Database connected successfully
+Tue Jun 06 2023 1:22:16 [HUC] info: Application app listening on port 5000
+Tue Jun 06 2023 1:22:25 [HUC] info: {
+  id: '00010',
+  role: 'student',
+  password: 'university1234',
+  _id: new ObjectId("647e35f1d8f2364374d6b97c"),
+  createdAt: 2023-06-05T19:22:25.256Z,
+  updatedAt: 2023-06-05T19:22:25.256Z,
+  __v: 0
+}
