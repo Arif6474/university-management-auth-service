@@ -16,7 +16,7 @@ const createUser = async (user: userType): Promise<userType | null> => {
   logger.info(createdUser)
 
   if (!createdUser) {
-    throw new ApiError(400, 'Failed to create user', '')
+    throw new ApiError(400, 'Failed to create user')
   }
   return createdUser
 }
