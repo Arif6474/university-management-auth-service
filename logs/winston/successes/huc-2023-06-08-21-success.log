@@ -1,0 +1,26 @@
+Thu Jun 08 2023 21:2:15 [HUC] info: 🛢   Database is connected successfully
+Thu Jun 08 2023 21:2:15 [HUC] info: Application  listening on port 5001
+Thu Jun 08 2023 21:3:10 [HUC] info: 🛢   Database is connected successfully
+Thu Jun 08 2023 21:3:10 [HUC] info: Application  listening on port 5001
+Thu Jun 08 2023 21:3:49 [HUC] info: 🛢   Database is connected successfully
+Thu Jun 08 2023 21:3:49 [HUC] info: Application  listening on port 5001
+Thu Jun 08 2023 21:3:53 [HUC] info: {
+  id: '00016',
+  role: 'student',
+  password: 'university1234',
+  _id: new ObjectId("6481edd8f627c320f879b100"),
+  createdAt: 2023-06-08T15:03:52.974Z,
+  updatedAt: 2023-06-08T15:03:52.974Z,
+  __v: 0
+}
+Thu Jun 08 2023 21:8:53 [HUC] info: 🛢   Database is connected successfully
+Thu Jun 08 2023 21:8:53 [HUC] info: Application  listening on port 5001
+Thu Jun 08 2023 21:32:8 [HUC] info: {
+  id: '00017',
+  role: 'student',
+  password: 'university1234',
+  _id: new ObjectId("6481f477daf66adbbad1e8dd"),
+  createdAt: 2023-06-08T15:32:07.752Z,
+  updatedAt: 2023-06-08T15:32:07.752Z,
+  __v: 0
+}
