@@ -24,4 +24,3 @@ const createUser = async (user: userType): Promise<userType | null> => {
 export const UserService = {
   createUser,
 };
-

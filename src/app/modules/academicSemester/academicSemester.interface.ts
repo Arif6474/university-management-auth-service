@@ -16,8 +16,6 @@ export type IAcademicSemesterMonths =
   | 'November'
   | 'December';
 
-
-
 export type IAcademicSemester = {
   title: IAcademicSemesterTitles;
   year: number;
