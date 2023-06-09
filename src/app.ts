@@ -14,7 +14,6 @@ app.use(globalErrorHandler);
 //routes
 app.use('/api/', Routes);
 
-
 app.get('/', async (req: Request, res: Response) => {
   res.send('server is running');
 });
