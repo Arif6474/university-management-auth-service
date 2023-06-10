@@ -26,10 +26,8 @@ const createSemester = catchAsync(
 
 const getAllSemesters = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
+    const paginationOptions = pick(req.query, paginationFields);
 
-    const paginationOptions = pick(req.query, paginationFields)
-   
-    
     const result = await AcademicSemesterServices.getAllSemesters(
       paginationOptions
     );

@@ -23,10 +23,10 @@ const getAllSemesters = async (
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
-    const sortCondition:{[key:string]: SortOrder} = {}
-    if (sortBy && sortOrder) {
-      sortCondition[sortBy]= sortOrder;
-    }
+  const sortCondition: { [key: string]: SortOrder } = {};
+  if (sortBy && sortOrder) {
+    sortCondition[sortBy] = sortOrder;
+  }
 
   const result = await AcademicSemester.find().sort().skip(skip).limit(limit);
   const total = await AcademicSemester.countDocuments();
