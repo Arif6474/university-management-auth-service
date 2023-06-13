@@ -1,4 +1,4 @@
-import {  z } from 'zod';
+import { z } from 'zod';
 import {
   academicSemesterCodes,
   academicSemesterTitles,
@@ -57,9 +57,10 @@ const updateAcademicSemesterZodSchema = z
   .refine(
     data =>
       (data.body.title && data.body.code) ||
-      (!data.body.title && !data.body.code),{
-        message: 'Either both title and code should be provided or neither'
-      }
+      (!data.body.title && !data.body.code),
+    {
+      message: 'Either both title and code should be provided or neither',
+    }
   );
 
 export const AcademicSemesterValidation = {

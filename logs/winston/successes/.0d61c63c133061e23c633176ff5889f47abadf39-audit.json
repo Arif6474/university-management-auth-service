@@ -139,6 +139,16 @@
             "date": 1686673614271,
             "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-13-22-success.log",
             "hash": "c03bcc4bee9ce967a354d9d4882b1f1ec107277709dfab113447859877dd4a58"
+        },
+        {
+            "date": 1686676016118,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-13-23-success.log",
+            "hash": "5923a66aa241cb66dfc0da95355bd929cce3b11a1af9c00c61e9fc4dafa68dfa"
+        },
+        {
+            "date": 1686679203302,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-14-00-success.log",
+            "hash": "47d730243375bc9bc72558078785acfd3cc06999c2772da89993cbb57fa7d7b1"
         }
     ],
     "hashType": "sha256"
