@@ -26,32 +26,43 @@ const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
   const paginationOptions = pick(req.query, paginationFields);
 
   const result = await AcademicFacultyServices.getAllFaculties(
-      filters,
-      paginationOptions
+    filters,
+    paginationOptions
   );
 
   sendResponse<IAcademicFaculty[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'Academic Faculty is retrived successfully',
-      meta: result.meta,
-      data: result.data,
-   
+    meta: result.meta,
+    data: result.data,
   });
 });
 const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await AcademicFacultyServices.getSingleFaculty(id);
+
+  sendResponse<IAcademicFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Faculty is retrived successfully',
+    data: result,
+  });
+});
+const deleteFaculty = catchAsync(async (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = await AcademicFacultyServices.getSingleFaculty(id);
+    const result = await AcademicFacultyServices.deleteFaculty(id);
   
     sendResponse<IAcademicFaculty>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Academic Faculty is retrived successfully',
+      message: 'Academic faculty is deleted successfully',
       data: result,
     });
   });
 export const AcademicFacultyController = {
   createFaculty,
   getAllFaculties,
-  getSingleFaculty
+  getSingleFaculty,
+  deleteFaculty
 };

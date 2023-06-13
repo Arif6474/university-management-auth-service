@@ -19,23 +19,21 @@ const createFaculty = async (
 const getAllFaculties = async (
   filters: IAcademicFacultyFilter,
   paginationOptions: IPagination
-):
-Promise<IGenericResponse<IAcademicFaculty[]>> => {
-    const { searchTerm, ...filtersData } = filters;
+): Promise<IGenericResponse<IAcademicFaculty[]>> => {
+  const { searchTerm, ...filtersData } = filters;
 
+  const andConditions = [];
 
-    const andConditions = [];
-  
-    if (searchTerm) {
-      andConditions.push({
-        $or: academicFacultySearchableFields.map(field => ({
-          [field]: {
-            $regex: searchTerm,
-            $options: 'i',
-          },
-        })),
-      });
-    }
+  if (searchTerm) {
+    andConditions.push({
+      $or: academicFacultySearchableFields.map(field => ({
+        [field]: {
+          $regex: searchTerm,
+          $options: 'i',
+        },
+      })),
+    });
+  }
 
   if (Object.entries(filtersData).length) {
     andConditions.push({
@@ -69,13 +67,20 @@ Promise<IGenericResponse<IAcademicFaculty[]>> => {
   };
 };
 const getSingleFaculty = async (
+  id: string
+): Promise<IAcademicFaculty | null> => {
+  const result = await AcademicFaculty.findById(id);
+  return result;
+};
+const deleteFaculty = async (
     id: string
   ): Promise<IAcademicFaculty | null> => {
-    const result = await AcademicFaculty.findById(id);
+    const result = await AcademicFaculty.findByIdAndDelete(id);
     return result;
   };
 export const AcademicFacultyServices = {
   createFaculty,
   getAllFaculties,
-  getSingleFaculty
+  getSingleFaculty,
+  deleteFaculty
 };
