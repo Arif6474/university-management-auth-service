@@ -8,7 +8,6 @@ import { IAcademicSemester } from './academicSemester.interface';
 import { academicSemesterFilterableFeilds } from './academicSemester.constant';
 import { AcademicSemesterServices } from './academicSemester.service';
 
-
 const createSemester = catchAsync(async (req: Request, res: Response) => {
   const { ...academicSemesterData } = req.body;
   const result = await AcademicSemesterServices.createSemester(

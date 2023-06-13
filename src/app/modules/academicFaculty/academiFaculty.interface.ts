@@ -1,8 +1,8 @@
-import { Model } from "mongoose";
+import { Model } from 'mongoose';
 
 export type IAcademicFaculty = {
-    title : string;
-}
+  title: string;
+};
 export type AcademicFacultyModel = Model<
   IAcademicFaculty,
   Record<string, unknown>
