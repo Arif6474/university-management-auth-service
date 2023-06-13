@@ -8,5 +8,5 @@ export type AcademicFacultyModel = Model<
   Record<string, unknown>
 >;
 export type IAcademicFacultyFilter = {
-    searchTerm?: string;
-  };
+  searchTerm?: string;
+};
