@@ -14,9 +14,9 @@ router.post(
 router.get('/', AcademicFacultyController.getAllFaculties);
 router.get('/:id', AcademicFacultyController.getSingleFaculty);
 router.patch(
-    '/:id',
-    validateRequest(AcademicFacultyValidation.updateAcademicFacultyZodSchema),
-    AcademicFacultyController.updateFaculty
-  );
+  '/:id',
+  validateRequest(AcademicFacultyValidation.updateAcademicFacultyZodSchema),
+  AcademicFacultyController.updateFaculty
+);
 router.delete('/:id', AcademicFacultyController.deleteFaculty);
 export const AcademicFacultyRoutes = router;
