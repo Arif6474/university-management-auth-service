@@ -10,13 +10,14 @@ import { IPagination } from '../../../interfaces/pagination';
 import { paginationHelpers } from '../../helpers/paginationHelper';
 
 const createDepartment = async (
-    payload: IAcademicDepartment
-  ): Promise<IAcademicDepartment | null> => {
-    const result = (await AcademicDepartment.create(payload)).populate(
-      'academicFaculty');
+  payload: IAcademicDepartment
+): Promise<IAcademicDepartment | null> => {
+  const result = (await AcademicDepartment.create(payload)).populate(
+    'academicFaculty'
+  );
 
-    return result;
-  };
+  return result;
+};
 
 const getAllDepartments = async (
   filters: IAcademicDepartmentFilters,
@@ -73,8 +74,6 @@ const getAllDepartments = async (
     data: result,
   };
 };
-
-
 
 const getSingleDepartment = async (
   id: string

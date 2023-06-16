@@ -169,6 +169,41 @@
             "date": 1686769276515,
             "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-15-01-success.log",
             "hash": "9f5e4fc2d63ae86d76901029038e66d43123725573ac5813931ca10ee4cb6026"
+        },
+        {
+            "date": 1686772935689,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-15-02-success.log",
+            "hash": "6e81e3ce8546aa32dc9f84adff28fffbdab27dd6f0b3a62cbe2581fa3c8708cd"
+        },
+        {
+            "date": 1686846636708,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-15-22-success.log",
+            "hash": "b907b13287a5b82bd54edbfa5e9138a8ac2340e77d486dd401ae5b9b207ec565"
+        },
+        {
+            "date": 1686856604269,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-16-01-success.log",
+            "hash": "26d7c7bcad1c9a55fc9f0a471cda1791ecc43064937cfba8419d95601b7cf5d4"
+        },
+        {
+            "date": 1686905510170,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-16-14-success.log",
+            "hash": "549b80b7b6f5d5e1a5fbf5bb31213e35ce7ffd5810b03a3b6f311c985c5009d0"
+        },
+        {
+            "date": 1686910771326,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-16-16-success.log",
+            "hash": "db2f24b9318f038e5277162c41ef7a25aa2a6088841f817b7d6e181afb3afaea"
+        },
+        {
+            "date": 1686914128684,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-16-17-success.log",
+            "hash": "4c996b9984f58d053f2fdebb3ae7595de1093d2f2543edfb65884811ff9f9b83"
+        },
+        {
+            "date": 1686922858547,
+            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\successes\\huc-2023-06-16-19-success.log",
+            "hash": "fd63f776ac2e568b9614e251fecc35c0c8018ade971bf69314729741b55827a8"
         }
     ],
     "hashType": "sha256"

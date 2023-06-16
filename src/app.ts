@@ -4,6 +4,7 @@ import cors from 'cors';
 import globalErrorHandler from './app/middleware/globalErrorHandler';
 import Routes from './app/Routes';
 import httpStatus from 'http-status';
+// import { generateFacultyId } from './app/modules/user/user.utils';
 
 app.use(cors());
 app.use(express.json());
@@ -34,4 +35,12 @@ app.get('/', async (req: Request, res: Response) => {
   res.send('server is running');
 });
 
+
+// const testId = async ()=>{
+//   const test = await generateFacultyId()
+//   // eslint-disable-next-line no-console
+//   console.log('sfsd' ,test);
+  
+// }
+// testId()
 export default app;

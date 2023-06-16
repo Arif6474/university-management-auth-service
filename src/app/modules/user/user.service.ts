@@ -3,10 +3,14 @@ import ApiError from '../../../errors/ApiError';
 import { logger } from '../../../shared/logger';
 import { userType } from './user.interface';
 import { User } from './user.model';
-import { generateUserId } from './user.utils';
+import { generateFacultyId, generateStudentId } from './user.utils';
 
 const createUser = async (user: userType): Promise<userType | null> => {
-  const id = await generateUserId();
+  const academinSemester ={
+    code : '01',
+    year: '2024'
+  }
+  const id = await generateFacultyId();
   user.id = id;
 
   if (!user.password) {
