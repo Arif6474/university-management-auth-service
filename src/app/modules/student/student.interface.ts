@@ -3,7 +3,6 @@ import { IAcademicFaculty } from '../academicFaculty/academiFaculty.interface';
 import { IAcademicDepartment } from '../academicDepartment/academicDepartment.interfaces';
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 
-
 export type UserName = {
   firstName: string;
   lastName: string;

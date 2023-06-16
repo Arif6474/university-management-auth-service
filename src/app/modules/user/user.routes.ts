@@ -6,9 +6,14 @@ import { UserController } from './user.controller';
 const router = express.Router();
 
 router.post(
-  '/create-user',
+  '/create-student',
   // validateRequest(UserValidation.createUserZodSchema),
-  UserController.createUser
+  UserController.createStudent
+);
+router.post(
+  '/create-faculty',
+  // validateRequest(UserValidation.createUserZodSchema),
+  UserController.createFaculty
 );
 
 export const UserRouters = router;

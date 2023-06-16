@@ -3,7 +3,7 @@ import { IAcademicSemester } from '../academicSemester/academicSemester.interfac
 import { User } from './user.model';
 
 export const findLastStudentId = async (): Promise<string | undefined> => {
-  const lastStudent = await User.findOne({role: 'student'}, { id: 1, _id: 0 })
+  const lastStudent = await User.findOne({ role: 'student' }, { id: 1, _id: 0 })
     .sort({
       createdAt: -1,
     })
@@ -12,8 +12,8 @@ export const findLastStudentId = async (): Promise<string | undefined> => {
   return lastStudent?.id ? lastStudent?.id.substring(4) : undefined;
 };
 export const generateStudentId = async (
-  academicSemester: IAcademicSemester
-): Promise<string | undefined> => {
+  academicSemester: IAcademicSemester | null
+): Promise<string> => {
   const currentId =
     (await findLastStudentId()) || (0).toString().padStart(5, '0');
   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
@@ -23,17 +23,20 @@ export const generateStudentId = async (
   return incrementedId;
 };
 
-export const findLastFacultyId = async(): Promise<string | undefined>=>{
-  const lastFaculty =await User.findOne({role: "faculty"},{id:1, _id:0}).sort({
-    createAt:-1
-  }).lean()
-  return lastFaculty?.id ? lastFaculty?.id.substring(2) : undefined
-}
+export const findLastFacultyId = async (): Promise<string | undefined> => {
+  const lastFaculty = await User.findOne({ role: 'faculty' }, { id: 1, _id: 0 })
+    .sort({
+      createAt: -1,
+    })
+    .lean();
+  return lastFaculty?.id ? lastFaculty?.id.substring(2) : undefined;
+};
 
-export const generateFacultyId = async ()=>{
-  const currentId = (await findLastFacultyId()) || (0).toString().padStart(5, '0')
-  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0')
-  incrementedId = `F-${incrementedId}`
+export const generateFacultyId = async () => {
+  const currentId =
+    (await findLastFacultyId()) || (0).toString().padStart(5, '0');
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+  incrementedId = `F-${incrementedId}`;
 
   return incrementedId;
-}
+};

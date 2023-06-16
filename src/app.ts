@@ -35,12 +35,11 @@ app.get('/', async (req: Request, res: Response) => {
   res.send('server is running');
 });
 
-
 // const testId = async ()=>{
 //   const test = await generateFacultyId()
 //   // eslint-disable-next-line no-console
 //   console.log('sfsd' ,test);
-  
+
 // }
 // testId()
 export default app;
