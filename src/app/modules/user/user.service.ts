@@ -24,8 +24,8 @@ const createStudent = async (
   const academicsemester = await AcademicSemester.findById(
     student.academicSemester
   );
-   // generate student id
-   let newUserAllData = null;
+  // generate student id
+  let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
     session.startTransaction();
@@ -37,15 +37,15 @@ const createStudent = async (
     if (!newStudent) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create student');
     }
-     //set student -->  _id into user.student
-     user.student = newStudent[0]._id;
+    //set student -->  _id into user.student
+    user.student = newStudent[0]._id;
 
-     const newUser = await User.create([user], { session });
- 
-     if (!newUser.length) {
-       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
-     }
-     newUserAllData = newUser[0];
+    const newUser = await User.create([user], { session });
+
+    if (!newUser.length) {
+      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
+    }
+    newUserAllData = newUser[0];
     await session.commitTransaction();
     await session.endSession();
   } catch (error) {
@@ -53,9 +53,9 @@ const createStudent = async (
     await session.endSession();
     throw error;
   }
-   //user --> student ---> academicSemester, academicDepartment , academicFaculty
+  //user --> student ---> academicSemester, academicDepartment , academicFaculty
 
-   if (newUserAllData) {
+  if (newUserAllData) {
     newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
       path: 'student',
       populate: [
@@ -73,7 +73,6 @@ const createStudent = async (
   }
 
   return newUserAllData;
- 
 };
 const createFaculty = async (
   faculty: IFaculty,
@@ -86,8 +85,8 @@ const createFaculty = async (
   // set role
   user.role = 'faculty';
 
-   // generate student id
-   let newUserAllData = null;
+  // generate student id
+  let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
     session.startTransaction();
@@ -99,15 +98,15 @@ const createFaculty = async (
     if (!newFaculty) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create faculty');
     }
-     //set student -->  _id into user.student
-     user.faculty = newFaculty[0]._id;
+    //set student -->  _id into user.student
+    user.faculty = newFaculty[0]._id;
 
-     const newUser = await User.create([user], { session });
- 
-     if (!newUser.length) {
-       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
-     }
-     newUserAllData = newUser[0];
+    const newUser = await User.create([user], { session });
+
+    if (!newUser.length) {
+      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
+    }
+    newUserAllData = newUser[0];
     await session.commitTransaction();
     await session.endSession();
   } catch (error) {
@@ -115,9 +114,9 @@ const createFaculty = async (
     await session.endSession();
     throw error;
   }
-   //user --> faculty ---> academicSemester, academicDepartment 
+  //user --> faculty ---> academicSemester, academicDepartment
 
-   if (newUserAllData) {
+  if (newUserAllData) {
     newUserAllData = await User.findOne({ id: newUserAllData.id }).populate({
       path: 'faculty',
       populate: [
@@ -127,16 +126,14 @@ const createFaculty = async (
         {
           path: 'academicDepartment',
         },
-       
       ],
     });
   }
 
   return newUserAllData;
- 
 };
 
 export const UserService = {
   createStudent,
-  createFaculty
+  createFaculty,
 };
