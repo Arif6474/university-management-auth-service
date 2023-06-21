@@ -100,38 +100,38 @@ const updateFaculty = async (
 };
 
 const deleteFaculty = async (id: string): Promise<IFaculty | null> => {
-    // check if the faculty is exist
-    const isExist = await Faculty.findOne({_id: id });
-  
-    if (!isExist) {
-      throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
+  // check if the faculty is exist
+  const isExist = await Faculty.findOne({ _id: id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Faculty not found !');
+  }
+  const session = await mongoose.startSession();
+
+  try {
+    session.startTransaction();
+    //delete faculty first
+    const faculty = await Faculty.findOneAndDelete({ _id: id }, { session });
+    if (!faculty) {
+      throw new ApiError(404, 'Failed to delete faculty');
     }
-    const session = await mongoose.startSession();
-  
-    try {
-      session.startTransaction();
-      //delete faculty first
-      const faculty = await Faculty.findOneAndDelete({_id: id }, { session });
-      if (!faculty) {
-        throw new ApiError(404, 'Failed to delete faculty');
-      }
-      //delete user
-     const user = await User.deleteOne({ id });
-      if (!user) {
-        throw new ApiError(404, 'Failed to delete user');
-      }
-      session.commitTransaction();
-      session.endSession();
-  
-      return faculty;
-    } catch (error) {
-      session.abortTransaction();
-      throw error;
+    //delete user
+    const user = await User.deleteOne({ id });
+    if (!user) {
+      throw new ApiError(404, 'Failed to delete user');
     }
-  };
+    session.commitTransaction();
+    session.endSession();
+
+    return faculty;
+  } catch (error) {
+    session.abortTransaction();
+    throw error;
+  }
+};
 export const FacultyServices = {
   getSingleFaculty,
   updateFaculty,
   getAllFaculties,
-  deleteFaculty
+  deleteFaculty,
 };
