@@ -6,7 +6,7 @@ import { FacultyValidation } from './faculty.validation';
 const router = express.Router();
 
 router.get('/:id', FacultyController.getSingleFaculty);
-// router.get('/', FacultyController.getAllFaculties);
+router.get('/', FacultyController.getAllFaculties);
 
 router.patch(
   '/:id',
