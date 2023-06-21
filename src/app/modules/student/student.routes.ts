@@ -3,13 +3,9 @@ import { StudentController } from './student.controller';
 import validateRequest from '../../middleware/validateRequest';
 import { StudentValidaion } from './student.validation';
 
-
 const router = express.Router();
 
-router.get(
-  '/',
-  StudentController.getAllStudents
-);
+router.get('/', StudentController.getAllStudents);
 router.get(
   '/:id',
   // validateRequest(UserValidation.createUserZodSchema),

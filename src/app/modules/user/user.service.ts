@@ -80,7 +80,7 @@ const createFaculty = async (
 ): Promise<IUser | null> => {
   // default password
   if (!user.password) {
-    user.password = config.default_student_password as string;
+    user.password = config.default_faculty_password as string;
   }
   // set role
   user.role = 'faculty';
@@ -98,13 +98,13 @@ const createFaculty = async (
     if (!newFaculty) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create faculty');
     }
-    //set student -->  _id into user.student
+    //set faculty -->  _id into user.faculty
     user.faculty = newFaculty[0]._id;
 
     const newUser = await User.create([user], { session });
 
     if (!newUser.length) {
-      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
+      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create faculty');
     }
     newUserAllData = newUser[0];
     await session.commitTransaction();
