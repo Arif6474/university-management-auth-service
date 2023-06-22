@@ -4,7 +4,11 @@ import ApiError from '../../../errors/ApiError';
 import { AcademicSemester } from '../academicSemester/academicSemester.model';
 import { IStudent } from '../student/student.interface';
 import { IUser } from './user.interface';
-import { generateAdminId, generateFacultyId, generateStudentId } from './user.utils';
+import {
+  generateAdminId,
+  generateFacultyId,
+  generateStudentId,
+} from './user.utils';
 import { Student } from '../student/student.model';
 import httpStatus from 'http-status';
 import { User } from './user.model';
@@ -194,5 +198,5 @@ const createAdmin = async (
 export const UserService = {
   createStudent,
   createFaculty,
-  createAdmin
+  createAdmin,
 };
