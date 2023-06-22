@@ -16,7 +16,7 @@ import { IFaculty } from '../faculty/faculty.interface';
 import { Faculty } from '../faculty/faculty.model';
 import { IAdmin } from '../admin/admin.interface';
 import { Admin } from '../admin/admin.model';
-
+import bcrypt from "bcrypt";
 const createStudent = async (
   student: IStudent,
   user: IUser
@@ -25,6 +25,8 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_password as string;
   }
+    //hashing password
+    user.password = await bcrypt.hash(user.password , Number(config.bcript_salt_round))
   // set role
   user.role = 'student';
   const academicsemester = await AcademicSemester.findById(
@@ -146,6 +148,8 @@ const createAdmin = async (
   if (!user.password) {
     user.password = config.default_admin_password as string;
   }
+
+
   // set role
   user.role = 'admin';
 
