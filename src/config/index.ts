@@ -13,4 +13,10 @@ export default {
   default_faculty_password: process.env.DEFAULT_FACULTY_PASS,
   default_admin_password: process.env.DEFAULT_ADMIN_PASS,
   bcript_salt_round: process.env.BCRIPT_SALT_ROUND,
+  jwt: {
+    secret: process.env.JWT_SECRET,
+    refresh_secret: process.env.JWT_REFRESH_SECRET,
+    expires_in: process.env.JWT_EXPIRES_IN,
+    refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN,
+  },
 };

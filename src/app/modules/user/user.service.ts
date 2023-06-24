@@ -25,7 +25,7 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_password as string;
   }
- 
+
   // set role
   user.role = 'student';
   const academicsemester = await AcademicSemester.findById(
