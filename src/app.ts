@@ -4,10 +4,12 @@ import cors from 'cors';
 import globalErrorHandler from './app/middleware/globalErrorHandler';
 import Routes from './app/Routes';
 import httpStatus from 'http-status';
+import cookieParser from 'cookie-parser';
 // import { generateFacultyId } from './app/modules/user/user.utils';
 
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 
 // global error handler

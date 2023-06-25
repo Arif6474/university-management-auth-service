@@ -9,6 +9,7 @@ import { facultyFilterableFields } from './faculty.constant';
 import { paginationFields } from '../../constants/pagination';
 
 const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
+  
   const filters = pick(req.query, facultyFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
 

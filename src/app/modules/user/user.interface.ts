@@ -12,6 +12,7 @@ export type IUser = {
   faculty?: Types.ObjectId | IFaculty;
   admin?: Types.ObjectId | IAdmin;
 };
+
 // export type IUserMethods = {
 //   isUserExit(id: string): Promise<Partial<IUser> | null>;
 //   isPasswordMatched(
