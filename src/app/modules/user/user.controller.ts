@@ -5,7 +5,6 @@ import sendResponse from '../../../shared/sendResponse';
 import httpStatus from 'http-status';
 
 const createStudent: RequestHandler = catchAsync(async (req, res) => {
-  
   const { student, ...user } = req.body;
   const result = await UserService.createStudent(student, user);
 

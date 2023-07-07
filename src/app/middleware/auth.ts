@@ -18,14 +18,14 @@ const auth =
 
       verifiedUser = jwtHelpers.verifyToken(token, config.jwt.secret as Secret);
       req.user = verifiedUser;
-      // role diye guard korar jnno
+      
       if (requiredRoles.length && !requiredRoles.includes(verifiedUser.role)) {
         throw new ApiError(httpStatus.FORBIDDEN, 'Forbidden');
       }
-      next()
+      next();
     } catch (error) {
       next(error);
     }
   };
 
-  export default auth
+export default auth;

@@ -9,7 +9,7 @@ import cookieParser from 'cookie-parser';
 
 app.use(cors());
 app.use(express.json());
-app.use(cookieParser())
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 // global error handler

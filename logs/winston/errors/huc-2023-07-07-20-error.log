@@ -1,0 +1,1 @@
+Fri Jul 07 2023 20:37:42 [HUC] error: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue
