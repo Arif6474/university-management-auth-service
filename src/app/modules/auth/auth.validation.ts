@@ -32,5 +32,5 @@ const changePasswordZodSchema = z.object({
 export const AuthValidation = {
   authZodSchema,
   refreshTokenZodSchema,
-  changePasswordZodSchema
+  changePasswordZodSchema,
 };

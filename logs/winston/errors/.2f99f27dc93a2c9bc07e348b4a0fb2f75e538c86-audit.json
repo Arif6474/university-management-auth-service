@@ -1,110 +1,110 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\.2f99f27dc93a2c9bc07e348b4a0fb2f75e538c86-audit.json",
+  "files": [
+    {
+      "date": 1687590476605,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-13-error.log",
+      "hash": "10fd7bc50686ebe58b2065aa3b9d3e0fd6a94321370ffec810a1027239528340"
     },
-    "auditLog": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\.2f99f27dc93a2c9bc07e348b4a0fb2f75e538c86-audit.json",
-    "files": [
-        {
-            "date": 1687590476605,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-13-error.log",
-            "hash": "10fd7bc50686ebe58b2065aa3b9d3e0fd6a94321370ffec810a1027239528340"
-        },
-        {
-            "date": 1687594122970,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-14-error.log",
-            "hash": "bf77f7838cc133f367dbd15571fbe97f94469606847b9a8e8743274c305565eb"
-        },
-        {
-            "date": 1687597201730,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-15-error.log",
-            "hash": "19d43181b4ef1eabfcd902fff727d707b87020bce0d9681cd0e48722ff3261bc"
-        },
-        {
-            "date": 1687604882138,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-17-error.log",
-            "hash": "605d7e5daa2d6d87987314c984328e62284824021413ff9ce0e0af3707a5161b"
-        },
-        {
-            "date": 1687608047057,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-18-error.log",
-            "hash": "8a9a2e42f1b80db76d058cd1951eaaf7c57c65ac616a046c7e96baf4a716e850"
-        },
-        {
-            "date": 1687613453558,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-19-error.log",
-            "hash": "ef863fc98b92bf4e7cee3e38f0abbf3cebfaf6b5931252a20b9fefc2bfd3e7c1"
-        },
-        {
-            "date": 1687630197894,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-00-error.log",
-            "hash": "2ddad116e5af7709d9c07fca9d7ae4791aebcae4e35d8842db63ad44537a090d"
-        },
-        {
-            "date": 1687636808983,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-02-error.log",
-            "hash": "5d40b70e7b3fbe9ab7ae531350073b8bc2153cb3fcc57cea14b0e03bb4f520db"
-        },
-        {
-            "date": 1687704921160,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-20-error.log",
-            "hash": "0fff999bd1b73ada6e19a6e8a7a050cb79996375bfbb8c12ebaf87d3739f1780"
-        },
-        {
-            "date": 1687711833566,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-22-error.log",
-            "hash": "0c4dbb2f63b547595aba345a5078a0f8c2fb20cda62d5258a50ea4a5f1f97bd7"
-        },
-        {
-            "date": 1687716138462,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-26-00-error.log",
-            "hash": "a8b271adfa9fca20f552c6c20ea9f812faf7c2c608f463f5dd4c8b759f802604"
-        },
-        {
-            "date": 1687719607139,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-26-01-error.log",
-            "hash": "c6473fc8288b35234082561926c93b6dc6edb7036aa6b927898a314c8f567c97"
-        },
-        {
-            "date": 1688392721238,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-03-19-error.log",
-            "hash": "28cc97af9deb6be7b4661f3913c080f693684b9d36459138df87e0288b66a429"
-        },
-        {
-            "date": 1688402415353,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-03-22-error.log",
-            "hash": "e6cddf228b647eeaf25c42aa3369cf396fdcee722111828ae55de00e81a3d562"
-        },
-        {
-            "date": 1688580759986,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-06-00-error.log",
-            "hash": "1f14a93e3106e8552002743f3202db36693dd8c95094c7ff644b0f61fb1a1a1e"
-        },
-        {
-            "date": 1688669713331,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-00-error.log",
-            "hash": "f75ae29f477bc037edeeeeed4167e09a8bcaf373a051ba352660b6eb595fd2f0"
-        },
-        {
-            "date": 1688732129406,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-18-error.log",
-            "hash": "e7e5b32ef1e012e4be2cf99b7cd1470fe2a4cdb21a0b6d62cea5d5140894c705"
-        },
-        {
-            "date": 1688736948972,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-19-error.log",
-            "hash": "d33cbd7b798599a9fea9619ce26eeb2d1ae07d15ff09b5789a879640bcd1337a"
-        },
-        {
-            "date": 1688740069997,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-20-error.log",
-            "hash": "b21fa71289598d273358506a32725b6e9f876cd9ab01f0fc690f9dfe7dfb7465"
-        },
-        {
-            "date": 1688742531567,
-            "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-21-error.log",
-            "hash": "7030d078c83ce03fec144ce5560cf05fdb6a9d5e55b5cdb4192b85ee9b5ef4c1"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687594122970,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-14-error.log",
+      "hash": "bf77f7838cc133f367dbd15571fbe97f94469606847b9a8e8743274c305565eb"
+    },
+    {
+      "date": 1687597201730,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-15-error.log",
+      "hash": "19d43181b4ef1eabfcd902fff727d707b87020bce0d9681cd0e48722ff3261bc"
+    },
+    {
+      "date": 1687604882138,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-17-error.log",
+      "hash": "605d7e5daa2d6d87987314c984328e62284824021413ff9ce0e0af3707a5161b"
+    },
+    {
+      "date": 1687608047057,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-18-error.log",
+      "hash": "8a9a2e42f1b80db76d058cd1951eaaf7c57c65ac616a046c7e96baf4a716e850"
+    },
+    {
+      "date": 1687613453558,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-24-19-error.log",
+      "hash": "ef863fc98b92bf4e7cee3e38f0abbf3cebfaf6b5931252a20b9fefc2bfd3e7c1"
+    },
+    {
+      "date": 1687630197894,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-00-error.log",
+      "hash": "2ddad116e5af7709d9c07fca9d7ae4791aebcae4e35d8842db63ad44537a090d"
+    },
+    {
+      "date": 1687636808983,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-02-error.log",
+      "hash": "5d40b70e7b3fbe9ab7ae531350073b8bc2153cb3fcc57cea14b0e03bb4f520db"
+    },
+    {
+      "date": 1687704921160,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-20-error.log",
+      "hash": "0fff999bd1b73ada6e19a6e8a7a050cb79996375bfbb8c12ebaf87d3739f1780"
+    },
+    {
+      "date": 1687711833566,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-25-22-error.log",
+      "hash": "0c4dbb2f63b547595aba345a5078a0f8c2fb20cda62d5258a50ea4a5f1f97bd7"
+    },
+    {
+      "date": 1687716138462,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-26-00-error.log",
+      "hash": "a8b271adfa9fca20f552c6c20ea9f812faf7c2c608f463f5dd4c8b759f802604"
+    },
+    {
+      "date": 1687719607139,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-06-26-01-error.log",
+      "hash": "c6473fc8288b35234082561926c93b6dc6edb7036aa6b927898a314c8f567c97"
+    },
+    {
+      "date": 1688392721238,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-03-19-error.log",
+      "hash": "28cc97af9deb6be7b4661f3913c080f693684b9d36459138df87e0288b66a429"
+    },
+    {
+      "date": 1688402415353,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-03-22-error.log",
+      "hash": "e6cddf228b647eeaf25c42aa3369cf396fdcee722111828ae55de00e81a3d562"
+    },
+    {
+      "date": 1688580759986,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-06-00-error.log",
+      "hash": "1f14a93e3106e8552002743f3202db36693dd8c95094c7ff644b0f61fb1a1a1e"
+    },
+    {
+      "date": 1688669713331,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-00-error.log",
+      "hash": "f75ae29f477bc037edeeeeed4167e09a8bcaf373a051ba352660b6eb595fd2f0"
+    },
+    {
+      "date": 1688732129406,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-18-error.log",
+      "hash": "e7e5b32ef1e012e4be2cf99b7cd1470fe2a4cdb21a0b6d62cea5d5140894c705"
+    },
+    {
+      "date": 1688736948972,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-19-error.log",
+      "hash": "d33cbd7b798599a9fea9619ce26eeb2d1ae07d15ff09b5789a879640bcd1337a"
+    },
+    {
+      "date": 1688740069997,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-20-error.log",
+      "hash": "b21fa71289598d273358506a32725b6e9f876cd9ab01f0fc690f9dfe7dfb7465"
+    },
+    {
+      "date": 1688742531567,
+      "name": "D:\\Next level course\\university-management-auth-service\\logs\\winston\\errors\\huc-2023-07-07-21-error.log",
+      "hash": "7030d078c83ce03fec144ce5560cf05fdb6a9d5e55b5cdb4192b85ee9b5ef4c1"
+    }
+  ],
+  "hashType": "sha256"
 }
